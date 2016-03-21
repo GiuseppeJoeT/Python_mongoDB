@@ -13,10 +13,14 @@ def mongo_connect():
 conn = mongo_connect()
 db = conn['twitter_stream']
 coll = db.my_collection
-doc = {"name": "Code", "surname": "Institute", "twitter": "@codersinstitute"}
-coll.insert(doc)
-result = coll.find_one()
-print result
+docs = [{"name": "Code", "surname": "Institute", "twitter": "@codersinstitute"},
+       {"name": "Henry", "surname": "Moore", "twitter": "@henrymoore"},
+       {"name": "Stephen", "surname": "Fry", "twitter": "@stephenfry"}]
+coll.insert_many(docs)
+results = coll.find()
+
+for doc in results:
+    print doc
 
 '''
 { u'twitter': u'@codersinstitute',
