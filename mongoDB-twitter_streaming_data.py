@@ -10,10 +10,10 @@ This class needs to be extended in order to use it. In your case, you have
 created a child class called MyStreamListener
 '''
 
-CONSUMER_KEY = 'PfBo9bFYQLP6baFjpl3bblArV'
-CONSUMER_SECRET = 'FuZKX6AbSrPONsUP2EtZSSwJd27OFqF3MhU7mIJAPK58NlRdFi'
-OAUTH_TOKEN = '1066129896-cAJ7vFroXXQC643nF0y29iV3cYebT1ZlUaDN8tY'
-OAUTH_TOKEN_SECRET = 'nRREWzdA419Pea1As1PTClRu1D9GnISDIQhtg89ykQcxj'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+OAUTH_TOKEN = ''
+OAUTH_TOKEN_SECRET = ''
 
 keyword_list = ['france']
 
