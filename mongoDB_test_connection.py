@@ -9,6 +9,7 @@ def mongo_connect():
     except pymongo.errors.ConnectionFailure, e:
         print "Could not connect to MongoDb: %s" % e
 
+# Add a document to the database
 conn = mongo_connect()
 db = conn['twitter_stream']
 coll = db.my_collection
@@ -23,4 +24,5 @@ print result
   u'surname': u'Institute',
   u'name': u'Code'}
 '''
+
 
