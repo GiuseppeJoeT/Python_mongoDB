@@ -10,6 +10,7 @@ This class needs to be extended in order to use it. In your case, you have
 created a child class called MyStreamListener
 '''
 
+# Sign Up on https://apps.twitter.com/ and use your own authentication keys
 CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 OAUTH_TOKEN = ''
